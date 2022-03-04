@@ -1,29 +1,21 @@
 let nodeAbi =
     [
         {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "playerAddr",
-                    "type": "address"
-                }
-            ],
-            "name": "administratorsRegistry",
-            "outputs": [],
+            "inputs": [],
             "stateMutability": "nonpayable",
-            "type": "function"
+            "type": "constructor"
         },
         {
-            "inputs": [
+            "inputs": [],
+            "name": "DividendAmount",
+            "outputs": [
                 {
-                    "internalType": "address",
-                    "name": "Recommender",
-                    "type": "address"
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
                 }
             ],
-            "name": "investment",
-            "outputs": [],
-            "stateMutability": "payable",
+            "stateMutability": "view",
             "type": "function"
         },
         {
@@ -53,58 +45,16 @@ let nodeAbi =
         },
         {
             "inputs": [],
-            "name": "settleStatic",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
+            "name": "Uaddress",
+            "outputs": [
                 {
                     "internalType": "address",
-                    "name": "newaddress",
+                    "name": "",
                     "type": "address"
                 }
             ],
-            "name": "setUaddressship",
-            "outputs": [],
-            "stateMutability": "nonpayable",
+            "stateMutability": "view",
             "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "newguessingCompetition",
-                    "type": "address"
-                }
-            ],
-            "name": "transferguessingCompetitionship",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "newOwner",
-                    "type": "address"
-                }
-            ],
-            "name": "transferOwnership",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "stateMutability": "nonpayable",
-            "type": "constructor"
-        },
-        {
-            "stateMutability": "payable",
-            "type": "receive"
         },
         {
             "inputs": [],
@@ -217,16 +167,16 @@ let nodeAbi =
             "type": "function"
         },
         {
-            "inputs": [],
-            "name": "DividendAmount",
-            "outputs": [
+            "inputs": [
                 {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
+                    "internalType": "address",
+                    "name": "playerAddr",
+                    "type": "address"
                 }
             ],
-            "stateMutability": "view",
+            "name": "administratorsRegistry",
+            "outputs": [],
+            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
@@ -283,6 +233,19 @@ let nodeAbi =
         {
             "inputs": [
                 {
+                    "internalType": "address",
+                    "name": "Recommender",
+                    "type": "address"
+                }
+            ],
+            "name": "investment",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
                     "internalType": "uint256",
                     "name": "",
                     "type": "uint256"
@@ -297,6 +260,26 @@ let nodeAbi =
                 }
             ],
             "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newaddress",
+                    "type": "address"
+                }
+            ],
+            "name": "setUaddressship",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "settleStatic",
+            "outputs": [],
+            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
@@ -365,16 +348,33 @@ let nodeAbi =
             "type": "function"
         },
         {
-            "inputs": [],
-            "name": "Uaddress",
-            "outputs": [
+            "inputs": [
                 {
                     "internalType": "address",
-                    "name": "",
+                    "name": "newOwner",
                     "type": "address"
                 }
             ],
-            "stateMutability": "view",
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
             "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newguessingCompetition",
+                    "type": "address"
+                }
+            ],
+            "name": "transferguessingCompetitionship",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "stateMutability": "payable",
+            "type": "receive"
         }
     ]
